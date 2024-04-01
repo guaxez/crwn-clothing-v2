@@ -13,13 +13,13 @@ import {
     createUserDocumentFromAuth,
     getCurrentUser,
 } from './utils/firebase/firebase.utils';
-import { setCurrentUser } from './store/user/user-action';
+import { checkUserSession } from './store/user/user-action';
 
 const App = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        getCurrentUser().then(user => console.log(user))
+        dispatch(checkUserSession())
       }, [dispatch]);
       
     return (
