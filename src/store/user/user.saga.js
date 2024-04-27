@@ -78,7 +78,7 @@ export function* onGoogleSignInStart() {
 }
 
 export function* onCheckUserSession() {
-    yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSUION, isUserAthenticated)
+    yield takeLatest(USER_ACTION_TYPES.CHECK_USER_SESSION, isUserAthenticated)
 }
 
 export function* onEmailSignInStart() {
