@@ -7,7 +7,6 @@ type FormInputProps = {
 } & InputHTMLAttributes<HTMLInputElement>
 
 const FormInput: FC<FormInputProps> = ({ label, ...otherProps }) => {
-    console.log(otherProps)
   return (
     <Group>
       <Input {...otherProps} />
